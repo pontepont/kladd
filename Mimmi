@@ -1,0 +1,19 @@
+siffra = int(input("Skriv en siffra då, kom igen "))
+count = 0
+summa = 0
+while siffra >= 0:
+    count += 1
+    if count == 3:
+        summa += siffra
+        print("Medelvärdet blir: ", summa/count)
+    elif count == 2:
+        summa += siffra
+        siffra = int(input("En siffra til, kom igen "))
+    elif count == 1:
+        summa += siffra
+        siffra = int(input("Två siffror till, kom igen "))
+    else:
+        print("Ofta du inte visste det")
+        break
+else:
+    print("Det var ingen bra siffra")
